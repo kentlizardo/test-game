@@ -1,0 +1,19 @@
+{
+  "name": "root_project",
+  "private": "true",
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "build": "turbo run build",
+    "build:web": "turbo run build --filter=@repo/web",
+    "build:api": "turbo run build --filter=@repo/api",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "prettier-plugin-jsdoc": "^1.3.3",
+    "turbo": "^2.5.4"
+  }
+}
