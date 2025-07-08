@@ -1,6 +1,4 @@
 // @ts-check
+import base from '@repo/eslint-config/base'
 
-export default {
-  root: true,
-  extends: '@repo/eslint-config',
-}
+export default base

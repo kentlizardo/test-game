@@ -1,5 +1,6 @@
+// @ts-check
 import tseslint from 'typescript-eslint'
-import base from '@repo/eslint-config'
+import base from '@repo/eslint-config/base'
 
 export default tseslint.config([
   ...base,
@@ -7,6 +8,7 @@ export default tseslint.config([
     languageOptions: {
       parserOptions: {
         projectService: true,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
