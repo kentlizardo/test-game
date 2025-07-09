@@ -6,6 +6,9 @@ coverage
 
 .log
 
-.env*.local
+# never commit .env to source control
+.env
+.env*
+!.env.example
 
 .turbo

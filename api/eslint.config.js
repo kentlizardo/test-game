@@ -11,5 +11,15 @@ export default tseslint.config([
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_[^_].*$|^_$',
+          varsIgnorePattern: '^_[^_].*$|^_$',
+          caughtErrorsIgnorePattern: '^_[^_].*$|^_$',
+        },
+      ],
+    },
   },
 ])
