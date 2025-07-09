@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    "incremental": true,
+    "tsBuildInfoFile": "${configDir}/tsconfig.tsbuildinfo",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "baseUrl": "${configDir}",
+    "outDir": "${configDir}/lib",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx"
+  },
+  "include": ["${configDir}/src", "${configDir}/src/**/*.json"],
+  "exclude": ["${configDir}/node_modules", "${configDir}/lib"]
+}
